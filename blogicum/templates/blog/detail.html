@@ -1,0 +1,23 @@
+{% extends "base.html" %}
+{% load static %}
+{% block title %}
+  {{ post.location }} {{ post.date }}
+{% endblock %}
+{% block content %}
+  <article>
+    <ul>
+      <li>
+        {{ post.location }}
+      </li>
+      <li>
+        {{ post.date }}
+      </li>
+      <li>
+        <a href="{{ post.category }}">{{ post.category }}</a>
+      </li>
+    </ul>         
+    <p>
+      {{ post.text|linebreaks }}
+    </p>          
+  </article>
+{% endblock %}
