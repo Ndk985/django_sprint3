@@ -25,10 +25,9 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'debug_toolbar',
     'blog.apps.BlogConfig',
     'pages.apps.PagesConfig',
-    'core.apps.CoreConfig',
-    'debug_toolbar',
 ]
 
 MIDDLEWARE = [
@@ -126,3 +125,5 @@ STATICFILES_DIRS = [
 # https://docs.djangoproject.com/en/3.2/ref/settings/#default-auto-field
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
+
+POSTS_PER_PAGE = 5
